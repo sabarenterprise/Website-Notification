@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Notification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        Brightchamps News
+        <button class="feedback" type="button" onclick="alert('Thanks for your Feedback..!')">Give Your Feedback</button>
+    </header>
+
+    <main class="main-container">
+        <!-- Menu sidebar kiri -->
+        <aside class="sidebar">
+            <h1>Stay <br>Informed, <br>Stay Ahead:</h1>
+            <p class="tagline">Your Daily Dose of <br>News Update</p>
+            <form id="subscribeForm">
+                <input id="emailInput" type="email" placeholder="Enter your email" required>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="subscribeMessage"></p>
+        </aside>
+
+        <!-- Main Content kanan -->
+        <section class="news-container">
+            <div class="date-label">FRIDAY</div>
+            <h2 id="currentDate">29-09-2023</h2>
+            <div id="newsList">
+                <article class="news-item">
+                    <h3>What is NASA's Psyche Mission?</h3>
+                    <p>
+                        The Psyche mission represents an ambitious venture
+                        to explore a distinct metallic asteroid positioned
+                        in orbit between Mars and Jupiter.
+                    </p>
+                </article>
+
+                <article class="news-item">
+                    <h3>
+                        Asian Games Medal Tally 2023, Overall Medals Tally
+                        By 28th SEP
+                    </h3>
+                    <p>
+                        The 19th Asian Games were held in Hangzhou, China,
+                        from September 23 to October 8, 2023. A total of
+                        45 Olympic sports and 61 disciplines were contested
+                        by over 11,000 athletes from 45 countries and
+                        territories.
+                    </p>
+                </article>
+
+                <article class="news-item">
+                    <h3>
+                        'Jhaadu Daan' Initiative Earns Place In India
+                        Book Of Records
+                    </h3>
+                    <p>
+                        An initiative highlighting community participation
+                        and the importance of keeping our surroundings clean.
+                    </p>
+                </article>
+
+                <article class="news-item">
+                    <h3>
+                        Nepal-China Sign 12 Agreements: A Closer Look
+                        at the Visit's Outcome
+                    </h3>
+                    <p>
+                        The agreements were the result of delegation-level
+                        talks between Prime Minister Dahal and Chinese
+                        Premier Li Qiang. The discussions covered
+                        expectations and commitments between both countries.
+                    </p>
+                </article>
+
+                <article class="news-item">
+                    <h3>
+                        India launches satellite to the south pole of moon
+                    </h3>
+                    <p>
+                        ISRO was successful in launching Chandrayaan-3
+                        towards the south pole of the moon. It's a victory
+                        and a proud moment for all the Indians.
+                    </p>
+                </article>
+            </div>
+        </section> 
+    </main>
+
+    <!-- Form Tambah Berita -->
+    <section class="add-news">
+        <h2>Have some interesting News! Add Now...</h2>
+        <form id="addNewsForm">
+            <input type="text" id="newsTitle" placeholder="Enter the news title" required>
+            <textarea rows="4" id="newsDescription" placeholder="Write the news description here..." required></textarea>
+            <button type="submit">Add</button>
+        </form>
+    </section>
+
+    <div id="toast" class="toast" role="status" aria-live="polite">
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    padding-bottom: 27px;
+    box-shadow: 0 5px 10px gray;
+    background: linear-gradient(135deg, rgb(226, 225, 232),rgb(67, 35, 225));
+}
+
+header button{
+    background-color: lightcyan;
+    color: rgb(60, 1, 60);
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+header button:hover{
+    background-color: rgb(3, 194, 194);
+    color: wheat;
+}
+
+.main-container{
+    display: grid;
+    padding: 15px 0;
+    grid-template-columns: 32% 68%;
+    align-items: stretch;
+    margin: 20px;
+    min-height: 510px;
+    border: 1px solid black;
+    background-color: lightcyan;
+}
+
+.sidebar{
+    padding: 0 15px;
+    background-color: lightcyan;
+    color: rgb(2, 59, 59);
+}
+
+.sidebar h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.tagline{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    font-style: italic;
+    margin-top: 4px;
+    margin-bottom: 30px;
+}
+
+#subscribeForm{
+    display: flex;
+    width: 100%;
+    max-width: 280px;
+    gap: 8px;
+}
+
+#subscribeForm input{
+    width: 70%;
+    min-width: 0;
+    padding: 7px 5px;
+    border: 1px solid black ;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+#subscribeForm button{
+    width: 25%;
+    min-width: 0;
+    padding: 7px 5px;
+    border: 1px solid black ;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#subscribeMessage{
+    margin-top: 10px;
+    color: rgb(49, 20, 51);
+    font-size: 11px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.news-container{
+    padding: 25px 15px;
+    background-color: lightcyan;
+    color: rgb(2, 59, 59);
+    max-height: 540px;
+    overflow-y: auto;
+}
+
+.date-label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    font-style: normal;
+    margin-bottom: 10px;
+    color: rgb(6, 6, 72);
+}
+
+#currentDate{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 16px;
+    color: rgb(5, 32, 5);
+}
+
+.news-item{
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+}
+
+.news-item h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: rgb(1, 7, 1);
+}
+
+.news-item p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 8px;
+    line-height: 1.7;
+    text-align: justify;
+    color: rgb(1, 7, 1);
+}
+
+/* Add News*/
+.add-news{
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(238, 240, 215);
+    color: rgb(8, 8, 67);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.add-news h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+#addNewsForm{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#addNewsForm input,
+#addNewsForm textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#addNewsForm textarea{
+    resize: vertical;
+}
+
+#addNewsForm button{
+    background-color: rgb(183, 192, 244);
+    color: rgb(62, 35, 2);
+    border-radius: 5px;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+
+
+#addNewsForm button:hover{
+    background-color: rgb(23, 72, 39);
+    color: rgb(234, 240, 237);
+}
